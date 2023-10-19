@@ -202,7 +202,7 @@ public class ServerUser {
 
                         if (storedPassword.equals("Password: " + password)) {
                             isUserFound = true;
-                            System.out.println("User has appropriate credentials and is now logged in");
+                            System.out.println("User has appropriate credentials. " + username + " is now logged in");
                             out.println("Sign-in successful. Welcome, " + username + "!");
                             return username;
                         }
@@ -299,9 +299,9 @@ public class ServerUser {
                     // Sort the items by deadline using a custom Comparator
                     Collections.sort(items, new DeadlineComparator());
 
-                    System.out.println("User's Items");
+                    System.out.println(username +"'s Items");
                     for (String item : items) {
-                        out.println(item);
+                        out.println("Items on Server log");
                         System.out.println(item); // Print to the server's console
                     }
 
@@ -340,4 +340,3 @@ public class ServerUser {
     }
 
 }
-

@@ -2,7 +2,7 @@
 
 ## Program Description 
 
-This is a simple program designed to create and sort a to do list for a user that has authorization.
+This is a simple program designed to create and sort a to do list for a user that has sets up authorization.
 
 ### Novel Features
 
